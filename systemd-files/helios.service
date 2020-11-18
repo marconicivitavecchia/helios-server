@@ -1,0 +1,13 @@
+[Unit]
+Description=Helios server for voting
+After=network.target
+
+[Service]
+Type=idle
+EnvironmentFile=/root/helios-server/env
+ExecStart=/root/helios-server/venv/bin/python /root/helios-server/manage.py runserver 0.0.0.0:8000
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
