@@ -57,11 +57,11 @@ if get_from_env('DATABASE_URL', None):
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Los_Angeles'
+TIME_ZONE = 'Europe/Rome'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'it-IT'
 
 SITE_ID = 1
 
@@ -172,8 +172,8 @@ VOTER_UPLOAD_REL_PATH = "voters/%Y/%m/%d"
 
 
 # Change your email settings
-DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'ben@adida.net')
-DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Ben for Helios')
+DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'elezioni@marconicloud.it')
+DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Elezioni Marconi')
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 
 LOGIN_URL = '/auth/'
@@ -199,7 +199,7 @@ FOOTER_LOGO_URL = get_from_env('FOOTER_LOGO_URL', None)
 
 WELCOME_MESSAGE = get_from_env('WELCOME_MESSAGE', "This is the default message")
 
-HELP_EMAIL_ADDRESS = get_from_env('HELP_EMAIL_ADDRESS', 'help@heliosvoting.org')
+HELP_EMAIL_ADDRESS = get_from_env('HELP_EMAIL_ADDRESS', 'helpdesk@marconicloud.it')
 
 AUTH_TEMPLATE_BASE = "server_ui/templates/base.html"
 HELIOS_TEMPLATE_BASE = "server_ui/templates/base.html"
@@ -208,7 +208,7 @@ HELIOS_VOTERS_UPLOAD = True
 HELIOS_VOTERS_EMAIL = True
 
 # are elections private by default?
-HELIOS_PRIVATE_DEFAULT = False
+HELIOS_PRIVATE_DEFAULT = True
 
 # authentication systems enabled
 #AUTH_ENABLED_AUTH_SYSTEMS = ['password','facebook','twitter', 'google', 'yahoo']
