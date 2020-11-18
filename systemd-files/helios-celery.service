@@ -1,0 +1,13 @@
+[Unit]
+Description=Celery service for helios server
+After=network.target
+
+[Service]
+Type=idle
+#EnvironmentFile=/root/helios-server/env
+ExecStart=/usr/local/bin/celery worker --app helios --events --beat --concurrency 1 --logfile celeryw.log --pidfile celeryw.pid --workdir /root/helios-server/
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

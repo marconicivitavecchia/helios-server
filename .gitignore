@@ -9,3 +9,5 @@ env.sh
 env
 .cache
 .idea/
+celeryw.pid
+celeryw.log
