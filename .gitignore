@@ -6,5 +6,6 @@ media/*
 venv
 celerybeat-*
 env.sh
+env
 .cache
 .idea/
