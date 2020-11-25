@@ -10,6 +10,6 @@ Lista delle pagine da tradurre in server_ui/templates:
 - [ ] election_tallied.html
 - [X] index.html
 
-Lista delle email da tradurre:
+Lista delle email da tradurre in server_ui/templates/email:
 - [ ] cast_vote_body.txt
 - [ ] cast_vote_subject.txt
