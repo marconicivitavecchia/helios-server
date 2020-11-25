@@ -13,3 +13,6 @@ Lista delle pagine da tradurre in server_ui/templates:
 Lista delle email da tradurre in server_ui/templates/email:
 - [ ] cast_vote_body.txt
 - [ ] cast_vote_subject.txt
+
+Lista delle pagine da tradurre in helios/templates:
+TODO scrivere qui le pagine tradotte e da tradurre!
