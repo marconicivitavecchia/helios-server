@@ -1,4 +1,4 @@
-Lista dei file da tradurre in server_ui/templates:
+Lista delle pagine da tradurre in server_ui/templates:
 - [x] base.html
 - [ ] confirm.html
 - [ ] docs.html
@@ -8,3 +8,7 @@ Lista dei file da tradurre in server_ui/templates:
 - [ ] faq.html
 - [ ] index.html
 - [ ] privacy.html
+
+Lista delle email da tradurre:
+- [ ] cast_vote_body.txt
+- [ ] cast_vote_subject.txt
