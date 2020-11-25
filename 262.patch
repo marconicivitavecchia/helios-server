@@ -1,0 +1,41 @@
+From 92f0a6c867d6cd2f005514480fbfc2ac89a7b5bc Mon Sep 17 00:00:00 2001
+From: redfast00 <redfast00@gmail.com>
+Date: Tue, 1 Sep 2020 12:45:12 -0300
+Subject: [PATCH] Election object is not JSON serializable while sending "time
+ to vote" mail to voters
+
+---
+ helios/tasks.py | 4 +++-
+ helios/views.py | 2 +-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/helios/tasks.py b/helios/tasks.py
+index 86100971..5b97b40d 100644
+--- a/helios/tasks.py
++++ b/helios/tasks.py
+@@ -63,9 +63,11 @@ def voters_notify(election_id, notification_template, extra_vars={}):
+ @shared_task
+ def single_voter_email(voter_uuid, subject_template, body_template, extra_vars={}):
+     voter = Voter.objects.get(uuid=voter_uuid)
++    election = Election.objects.get(id=extra_vars['election_id'])
+ 
+     the_vars = copy.copy(extra_vars)
+-    the_vars.update({'voter': voter})
++    the_vars['voter'] = voter
++    the_vars['election'] = election
+ 
+     subject = render_template_raw(None, subject_template, the_vars)
+     body = render_template_raw(None, body_template, the_vars)
+diff --git a/helios/views.py b/helios/views.py
+index b62f6eeb..d438b4a9 100644
+--- a/helios/views.py
++++ b/helios/views.py
+@@ -1389,7 +1389,7 @@ def voters_email(request, election):
+         'custom_message' : email_form.cleaned_data['body'],
+         'election_vote_url' : election_vote_url,
+         'election_url' : election_url,
+-        'election' : election
++        'election_id' : election.id
+         }
+         
+       voter_constraints_include = None
