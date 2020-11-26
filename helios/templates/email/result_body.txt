@@ -1,19 +1,19 @@
-Dear {{voter.name}},
+Gentile {{voter.name}},
 
-The tally for {{election.name}} has been computed and released:
+Il conteggio per {{election.name}} è stato effettuato e pubblicato:
 
   {{election_url}}
 
 {{custom_message|safe}}
 
-{% if voter.vote_hash %}Your smart ballot tracker in this election was:
+{% if voter.vote_hash %}La tua traccia del voto in questa elezione è stata:
 
   {{voter.vote_hash}}
 
-If you believe this tracker to be in error, please contact us.
+Se credi che questa traccia sia sbagliata, contattaci.
 {% else %}
-It appears you did not cast a vote in this election.
-Please contact us if you believe you did.
+Sembra che tu non abbia votato in questa elezione.
+Se pensi che sia un errore, per favore contattaci.
 {% endif %}
 --
 Helios
