@@ -3,7 +3,7 @@ Traduzione delle parole:
 - a ballot = una votazione
 - a vote = un voto
 - tally = conteggio
-- smart ballot tracker = traccia del voto
+- smart ballot tracker = impronta univoca del voto
 
 Lista delle pagine da tradurre in server_ui/templates:
 - [x] base.html
