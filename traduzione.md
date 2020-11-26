@@ -65,7 +65,6 @@ Lista delle pagine da tradurre in helios/templates:
 - [ ] voters_search.html
 - [ ] voters_upload_confirm.html
 - [ ] voters_upload.html
-- [ ]
 
 ./email:
 
