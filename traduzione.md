@@ -5,7 +5,7 @@ Traduzione delle parole:
 
 Lista delle pagine da tradurre in server_ui/templates:
 - [x] base.html
-- [ ] confirm.html
+- [x] confirm.html
 - [ ] done.html
 - [ ] election_tallied.html
 - [X] index.html
