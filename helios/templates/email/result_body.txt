@@ -6,7 +6,7 @@ Il conteggio per {{election.name}} è stato effettuato e pubblicato:
 
 {{custom_message|safe}}
 
-{% if voter.vote_hash %}La tua traccia del voto in questa elezione è stata:
+{% if voter.vote_hash %}La tua impronta univoca del voto in questa elezione è stata:
 
   {{voter.vote_hash}}
 
