@@ -1,4 +1,5 @@
 Traduzione delle parole:
+- cast a ballot = inviare un voto
 - a ballot = una votazione
 - a vote = un voto
 - tally = conteggio
