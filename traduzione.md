@@ -66,7 +66,9 @@ Lista delle pagine da tradurre in helios/templates:
 - [ ] voters_upload_confirm.html
 - [ ] voters_upload.html
 - [ ]
+
 ./email:
+
 - [X] info_body.txt
 - [X] info_subject.txt
 - [X] result_body.txt
@@ -75,6 +77,8 @@ Lista delle pagine da tradurre in helios/templates:
 - [ ] simple_subject.txt
 - [ ] vote_body.txt
 - [ ] vote_subject.txt
+
 ./notification:
+
 - [X] result.txt
 
