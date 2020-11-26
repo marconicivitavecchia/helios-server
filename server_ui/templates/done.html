@@ -1,17 +1,17 @@
 {% extends 'server_ui/templates/base.html' %}
-{% block title %}Confirm Vote{% endblock %}
+{% block title %}Conferma del Voto{% endblock %}
 
 {% block content %}
-<h1>Your Vote was Cast</h1>
+<h1>Hai espresso il tuo voto</h1>
 
 <p>
-    A vote was successfully cast for <b>{{voter.voter_id}}</b>, with vote fingerprint:
+    Un voto &#232; stato correttamente registrato per <b>{{voter.voter_id}}</b>, con la chiave elettorale:
     <br /><br />
     <tt style="font-size: 2em;">{{voter.vote_hash}}</tt>
 </p>
 
 <p>
-    Visit the <a href="{% url "election@view" election.uuid %}">election homepage</a>.
+    Vai alla homepage <a href="{% url "election@view" election.uuid %}">election homepage</a>.
 </p>
 
 {% endblock %}

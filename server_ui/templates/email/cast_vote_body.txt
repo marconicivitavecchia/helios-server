@@ -1,12 +1,13 @@
-Dear {{voter.name}},
+Gentile {{voter.name}},
 
-You have successfully cast a vote in {{election.name}}.
+il tuo voto per l'elezione {{election.name}} &#232; stato correttamente registrato.
 
-Your ballot is archived at: {{cast_vote_url}}
+Il tuo voto &#232; memorizzato in: {{cast_vote_url}}
 
 {% if election.use_voter_aliases %}
-This election uses voter aliases to protect your privacy.
-Your voter alias is: {{voter.alias}}.
+Al fine di proteggere la tua privacy, questa modalit&#224; di voto utilizza degli pseudonimi.
+
+Il tuo pseudonimo &#232;: {{voter.alias}}.
 {% endif %}
 
 --
