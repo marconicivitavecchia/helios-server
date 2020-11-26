@@ -7,7 +7,7 @@ Lista delle pagine da tradurre in server_ui/templates:
 - [x] base.html
 - [x] confirm.html
 - [x] done.html
-- [ ] election_tallied.html
+- [x] election_tallied.html
 - [X] index.html
 
 Lista delle email da tradurre in server_ui/templates/email:
