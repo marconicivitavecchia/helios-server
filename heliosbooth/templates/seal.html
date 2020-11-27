@@ -4,7 +4,6 @@
 <h4><a onclick="$('#auditbody').slideToggle(250);" href="#">Verifica</a> <span style="font-size: 0.8em; color: #444">[opzionale]</span></h4>
 <div id="auditbody" style="display:none;">
 <p>
-    Se 
 Se selezioni questa scelta, puoi verificare il tuo voto e mostrare come le tue scelte sono state criptate.
 </p>
 <p>
@@ -38,12 +37,12 @@ Se selezioni questa scelta, puoi verificare il tuo voto e mostrare come le tue s
 </div>
 
 
-<p><p>La tua impronta di voto è <b><tt style="font-size: 11pt;">{$T.encrypted_vote_hash}</tt></b>, e tu puoi <a onclick="BOOTH.show_receipt(); return false;" href="#">stamparla</a>.<br /><br /></p>
+<p><p>La tua impronta di voto è <b><tt style="font-size: 11pt;">{$T.encrypted_vote_hash}</tt></b>, se vuoi puoi <a onclick="BOOTH.show_receipt(); return false;" href="#">stamparla</a>.<br /><br /></p>
 
 <p>
-    Una volta che hai cliccato su "Invia", la versione non criptata del tuo voto sarà distrutta, e rimarrà solo la versione criptata. La versione criptata sarà inviata al server per le elezioni.</p>
+    Una volta che hai cliccato su "Invia", la versione non criptata del tuo voto sarà distrutta e rimarrà solo la versione criptata. La versione criptata sarà inviata al server per le elezioni.</p>
 
-<button id="proceed_button" onclick="BOOTH.cast_ballot();">Invia il tu voto!</button><br />
+<button id="proceed_button" onclick="BOOTH.cast_ballot();">Invia il tuo voto!</button><br />
 <div id="loading_div"><img src="loading.gif" id="proceed_loading_img" /></div>
 
 
