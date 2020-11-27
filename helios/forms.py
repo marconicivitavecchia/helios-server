@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 Forms for Helios
 """
@@ -10,7 +11,7 @@ from django.conf import settings
 
 
 class ElectionForm(forms.Form):
-  short_name = forms.SlugField(max_length=40, help_text='senza spazi, farà parte dell\'URL dell\'elezione, e.g. my-club-2020')
+  short_name = forms.SlugField(max_length=40, help_text="senza spazi, farà parte dell'URL dell'elezione, e.g. my-club-2020")
   name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'size':60}), help_text='il nome della tua elezione, e.g. Elezioni per il mio club 2020')
   description = forms.CharField(max_length=4000, widget=forms.Textarea(attrs={'cols': 70, 'wrap': 'soft'}), required=False)
   election_type = forms.ChoiceField(label="tipo", choices = Election.ELECTION_TYPES)
