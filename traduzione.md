@@ -81,3 +81,5 @@ Lista delle pagine da tradurre in helios/templates:
 
 - [X] result.txt
 
+heliosbooth:
+- tutto tradotto
