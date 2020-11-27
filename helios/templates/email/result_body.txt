@@ -1,12 +1,12 @@
 Gentile {{voter.name}},
 
-Il conteggio per {{election.name}} è stato effettuato e pubblicato:
+Il conteggio per {{election.name}} e' stato effettuato e pubblicato:
 
   {{election_url}}
 
 {{custom_message|safe}}
 
-{% if voter.vote_hash %}La tua impronta univoca del voto in questa elezione è stata:
+{% if voter.vote_hash %}La tua impronta univoca del voto in questa elezione e' stata:
 
   {{voter.vote_hash}}
 

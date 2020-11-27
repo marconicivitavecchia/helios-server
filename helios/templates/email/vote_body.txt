@@ -16,13 +16,13 @@ Abbiamo registrato il tuo voto con l'impronta:
 
 Puoi votare di nuovo se desideri: solo l'ultimo voto conta.
 {% endif %}{% if election.use_voter_aliases %}
-Per proteggere il tuo anonimato, questa elezione è configurata
+Per proteggere il tuo anonimato, questa elezione e' configurata
 per non mostrare mai il tuo ID di elettore, nome o indirizzo email al pubblico.
 Al suo posto, il centro tracciamento voti mostrerà solo il tuo alias.
 
-Il tuo alias di elettore è {{voter.alias}}.
+Il tuo alias di elettore e' {{voter.alias}}.
 
-IMPORTANTE: quando ti sarà chiesto di accedere per votare,
+IMPORTANTE: quando ti sara' chiesto di accedere per votare,
 ricordati di usare il tuo *ID di elettore*, non il tuo alias.
 {% endif %}
 --
