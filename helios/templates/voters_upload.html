@@ -1,14 +1,14 @@
 {% extends TEMPLATE_BASE %}
 
 {% block content %}
-  <h2 class="title">{{election.name}} &mdash; Bulk Upload Voters <span style="font-size:0.7em;">[<a href="{% url "election@view" election.uuid %}">back to election</a>]</span></h2>
+  <h2 class="title">{{election.name}} &mdash; Caricamento collettivo elettori <span style="font-size:0.7em;">[<a href="{% url "election@view" election.uuid %}">torna all'elezione</a>]</span></h2>
 
 <form method="post" action="" id="upload_form" enctype="multipart/form-data">
   <p>
-    If you would like to specify your list of voters by name and email address,<br />
-    you can bulk upload a list of such voters here.<br /><br />
-
-    Please prepare a text file of comma-separated values with the fields:
+    Se vuoi specificare una lista di elettori con nome ed indirizzo email,<br />
+    puoi caricare una lista di elettori qui.<br /><br />
+    
+    Per favore prepara un file di testo separato da virgole con questi campi:
 </p>
 <pre>
    &lt;unique_id&gt;,&lt;email&gt,&lt;full name&gt;
@@ -24,7 +24,7 @@ For example:
   </pre> 
 
   <p>
-    The easiest way to prepare such a file is to use a spreadsheet program and to export as "CSV".
+    Il modo più semplice per preparare questo file è usare un foglio di calcolo ed esportare come "CSV".
   </p>
   {% if error %}
   <div style="color: red;">{{error}}</div>
@@ -39,8 +39,8 @@ For example:
 </div>
 
 <div id="done" style="display:none;">
-  OK, done uploading.<br />
-  You can now <a href="./manage">view the list of voters</a>.
+  OK, ho finito di caricare.<br />
+  Adesso puoi <a href="./manage">vedere la lista degli elettori</a>.
 </div>
 
 {% endblock %}

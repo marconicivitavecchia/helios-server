@@ -57,13 +57,13 @@ Lista delle pagine da tradurre in helios/templates:
 - [X] trustee_check_sk.html
 - [ ] trustee_decrypt_and_prove.html
 - [ ] trustee_home.html
-- [] voters_eligibility.html
-- [ ] voters_email.html
-- [ ] voters_list.html
-- [ ] voters_manage.html
-- [ ] voters_search.html
-- [ ] voters_upload_confirm.html
-- [ ] voters_upload.html
+- [X] voters_eligibility.html
+- [X] voters_email.html
+- [X] voters_list.html
+- [X] voters_manage.html
+- [X] voters_search.html
+- [X] voters_upload_confirm.html
+- [X] voters_upload.html
 
 ./email:
 
