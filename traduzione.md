@@ -5,6 +5,7 @@ Traduzione delle parole:
 - a vote = un voto
 - tally = conteggio
 - smart ballot tracker = impronta univoca del voto
+- voting booth = cabina elettorale
 
 Lista delle pagine da tradurre in server_ui/templates:
 - [x] base.html
