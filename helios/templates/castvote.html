@@ -2,8 +2,8 @@
 
 {% block title %}{{cast_vote.vote_tinyhash}} &mdash; {{election.name}}{% endblock %}
 {% block content %}
-<h2 class="title">Invia voto {{cast_vote.vote_tinyhash}}</h2>
-invia per <a href="{% url "election@view" election.uuid %}">{{election.name}}</a><br />
+<h2 class="title">Voto inviato {{cast_vote.vote_tinyhash}}</h2>
+inviato per <a href="{% url "election@view" election.uuid %}">{{election.name}}</a><br />
 Impronta: <tt>{{cast_vote.vote_hash}}</tt><br />
 da <b><u>
 {% if the_voter.alias %}

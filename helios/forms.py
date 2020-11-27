@@ -19,7 +19,7 @@ class ElectionForm(forms.Form):
   #use_advanced_audit_features = forms.BooleanField(required=False, initial=True, help_text='disable this only if you want a simple election with reduced security but a simpler user interface')
   randomize_answer_order = forms.BooleanField(required=False, initial=False, help_text='abilita questa spunta se vuoi che le risposte siano presentate in ordine casuale per ogni votante')
   private_p = forms.BooleanField(required=False, initial=False, label="Privata?", help_text='Un elezione privata è visibile solo agli elettori registrati.')
-  help_email = forms.CharField(required=False, initial="", label="Indirizzo Email di supporto", help_text='Un indirizzo email che gli elettori possono contattare per chiedere supporto.')
+  help_email = forms.CharField(required=False, initial="", label="Indirizzo email di supporto", help_text='Un indirizzo email che gli elettori possono contattare per chiedere supporto.')
   
   if settings.ALLOW_ELECTION_INFO_URL:
     election_info_url = forms.CharField(required=False, initial="", label="URL per scaricare le informazioni dell'elezione", help_text="un URL che punta ad un documento PDF che contiene informazioni extra sull'elezione, e.g. biografia e dichiarazioni dei candidati")

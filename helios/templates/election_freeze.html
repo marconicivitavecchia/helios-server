@@ -35,7 +35,7 @@ La registrazione per la tua elezione è al momento <b>chiusa</b>, il che signifi
 <form method="post" action="">
 <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
     
-<input class="button" type="submit" value="Freeze the ballot" />
+<input class="button" type="submit" value="Congela la votazione" />
 <button onclick="document.location='{% url "election@view" election.uuid %}'; return false;">non importa</button>
 </form>
 {% endif %}
