@@ -70,11 +70,11 @@ Lista delle pagine da tradurre in helios/templates:
 - [X] info_body.txt
 - [X] info_subject.txt
 - [X] result_body.txt
-- [ ] result_subject.txt
-- [ ] simple_body.txt
-- [ ] simple_subject.txt
-- [ ] vote_body.txt
-- [ ] vote_subject.txt
+- [X] result_subject.txt
+- [X] simple_body.txt
+- [X] simple_subject.txt
+- [X] vote_body.txt
+- [X] vote_subject.txt
 
 ./notification:
 

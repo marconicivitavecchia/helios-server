@@ -1,1 +1,1 @@
-Tally Released - {{custom_subject|safe}}
+Conteggio pubblicato - {{custom_subject|safe}}
