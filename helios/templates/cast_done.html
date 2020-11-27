@@ -2,25 +2,25 @@
 {% block title %}Confirm Vote{% endblock %}
 
 {% block content %}
-<h1>{{election.name}} &mdash; Vote Successfully Cast!</h1>
+<h1>{{election.name}} &mdash; Vot inviato con successo!</h1>
 
 <p>
-    Congratulations, your vote has been <b><u>successfully cast</u></b>!
+    Congratulazioni, il tuo voto è stato <b><u>inviato con successo</u></b>!
 </p>
 
 <p>
-  Your smart ballot tracker is:<br /><br />
+  La tua impronta univoca di voto è:<br /><br />
     <tt style="font-size:1.8em; font-weight: bold; padding-left: 20px;">  {{vote_hash}}</tt>
 </p>
 
 {% if logout %}
-<p><b>For your safety, we have logged you out.</b></p>
+<p><b>Per la tua sicurezza, è stato effettuato il log out.</b></p>
 <iframe width="0" height="0" border="0" frameborder="0" src="{% url "auth@logout" %}">
 </iframe>
 {% endif %}
 
 <p style="font-size: 1.4em;">
-[ <a href="{% url "election@view" election.uuid %}">return to election info</a> ]
+[ <a href="{% url "election@view" election.uuid %}">ritorna alle info sulle elezioni</a> ]
 </p>
 
 {% endblock %}
