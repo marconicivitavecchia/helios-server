@@ -6,7 +6,7 @@
             "uuid" : "206ef039-05c9-4e9c-bb8f-963da50c08d4",
             "short_name" : "test",
             "name" : "Test Election",
-            "election_type" : "election",
+            "election_type" : "elezione",
             "use_advanced_audit_features" : true,
 	    "created_at" : "2013-02-22 12:00:00",
 	    "modified_at" : "2013-02-22 12:00:00",
