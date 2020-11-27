@@ -2,13 +2,13 @@
 
 {% block content %}
 
-  <h2 class="title">Election {{election.name}} Already Tallied</h2>
+  <h2 class="title">Elezione {{election.name}} già conteggiata</h2>
 
   <p>
-      This election has already been tallied, you can no longer cast a vote.
+      Questa elezione è già stata conteggiata, non puoi più inviare voti.
   </p>
   
   <p>
-      <a href="{% url "election@view" election.uuid %}">view the election tally</a>
+      <a href="{% url "election@view" election.uuid %}">guarda il conteggio</a>
   </p>
 {% endblock %}

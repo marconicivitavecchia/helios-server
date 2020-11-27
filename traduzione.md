@@ -30,34 +30,34 @@ Lista delle pagine da tradurre in helios/templates:
 - [X] election_bboard.html
 - [X] election_build.html
 - [X] election_cast_confirm.html
-- [ ] election_compute_tally.html
-- [ ] election_edit.html
-- [ ] election_extend.html
-- [ ] election_freeze.html
-- [ ] election_keygenerator.html
-- [ ] election_new_2.html
-- [ ] election_new.html
-- [ ] election_not_started.html
-- [ ] election_questions.html
-- [ ] election_register.html
-- [ ] elections_administered.html
-- [ ] elections_voted.html
-- [ ] election_tallied.html
-- [ ] election_view.html
+- [X] election_compute_tally.html
+- [X] election_edit.html
+- [X] election_extend.html
+- [X] election_freeze.html
+- [X] election_keygenerator.html
+- [X] election_new_2.html
+- [X] election_new.html
+- [X] election_not_started.html
+- [X] election_questions.html
+- [X] election_register.html
+- [X] elections_administered.html
+- [X] elections_voted.html
+- [X] election_tallied.html
+- [X] election_view.html
 - [ ] list_trustees.html
-- [ ] new_trustee.html
+- [X new_trustee.html
 - [ ] nocookies.html
-- [ ] password_voter_login.html
-- [ ] release_result.html
-- [ ] socialbuttons.html
-- [ ] stats_elections.html
-- [ ] stats.html
-- [ ] stats_problem_elections.html
-- [ ] stats_recent_votes.html
-- [ ] trustee_check_sk.html
+- [X] password_voter_login.html
+- [X] release_result.html
+- [X] socialbuttons.html
+- [X] stats_elections.html
+- [X] stats.html
+- [X] stats_problem_elections.html
+- [X] stats_recent_votes.html
+- [X] trustee_check_sk.html
 - [ ] trustee_decrypt_and_prove.html
 - [ ] trustee_home.html
-- [ ] voters_eligibility.html
+- [] voters_eligibility.html
 - [ ] voters_email.html
 - [ ] voters_list.html
 - [ ] voters_manage.html

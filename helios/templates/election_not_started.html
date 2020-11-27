@@ -2,13 +2,13 @@
 
 {% block content %}
 
-  <h2 class="title">Election {{election.name}} Not Yet Open</h2>
+  <h2 class="title">Elezione {{election.name}} non ancora aperta</h2>
 
   <p>
-      This election is not yet open. You probably got here from the Ballot Preview.
+      Questa elezione non è ancora aperta. Sei arrivato qui probabilmente dall'anteprima della scheda.
   </p>
   
   <p>
-      <a href="{% url "election@view" election.uuid %}">back to the election</a>
+      <a href="{% url "election@view" election.uuid %}">torna all'elezione</a>
   </p>
 {% endblock %}
