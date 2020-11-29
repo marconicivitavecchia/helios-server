@@ -10,13 +10,13 @@
  vota
 {#if $T.question.min && $T.question.min > 0}
 {#if $T.question.max}
-{$T.question.min} fino a {$T.question.max}
+{$T.question.min} fino a {$T.question.max} preferenze
 {#else}
 almeno {$T.question.min}
 {#/if}
 {#else}
 {#if $T.question.max}
-{#if $T.question.max > 1}fino a {#/if}{$T.question.max}
+{#if $T.question.max > 1} fino a {#/if}{$T.question.max} preferenze
 {#else}
 quanti ne hai selezionati
 {#/if} 
